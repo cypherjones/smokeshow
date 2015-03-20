@@ -1,0 +1,1761 @@
+/*
+Theme Name: Smokeshow Fitness
+Theme URI: http://smokeshowfitness.com/
+Description: Smokeshow Fitness
+Version: 1.0
+Author: Beefy Marketing
+Author URI: http://beefymarketing.com
+*/
+
+@import url(css/gravity.css);
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Regular-webfont-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/OpenSans-Bold-webfont-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Bold-webfont-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Bold-webfont-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Bold-webfont-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Bold-webfont-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/OpenSans-Italic-webfont-webfont.eot');
+    src: url('fonts/OpenSans-Italic-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Italic-webfont-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Italic-webfont-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Italic-webfont-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Italic-webfont-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('fonts/ufonts.com_gotham-bold-webfont.eot');
+    src: url('fonts/ufonts.com_gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ufonts.com_gotham-bold-webfont.woff2') format('woff2'),
+         url('fonts/ufonts.com_gotham-bold-webfont.woff') format('woff'),
+         url('fonts/ufonts.com_gotham-bold-webfont.ttf') format('truetype'),
+         url('fonts/ufonts.com_gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('fonts/ufonts.com_gotham-book-webfont.eot');
+    src: url('fonts/ufonts.com_gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ufonts.com_gotham-book-webfont.woff2') format('woff2'),
+         url('fonts/ufonts.com_gotham-book-webfont.woff') format('woff'),
+         url('fonts/ufonts.com_gotham-book-webfont.ttf') format('truetype'),
+         url('fonts/ufonts.com_gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('fonts/Montserrat-Regular-webfont.eot');
+    src: url('fonts/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Montserrat-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Montserrat-Regular-webfont.woff') format('woff'),
+         url('fonts/Montserrat-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('fonts/Montserrat-Bold-webfont.eot');
+    src: url('fonts/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Montserrat-Bold-webfont.woff2') format('woff2'),
+         url('fonts/Montserrat-Bold-webfont.woff') format('woff'),
+         url('fonts/Montserrat-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'everglowregular';
+    src: url('fonts/Everglow Script-webfont.eot');
+    src: url('fonts/Everglow Script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Everglow Script-webfont.woff2') format('woff2'),
+         url('fonts/Everglow Script-webfont.woff') format('woff'),
+         url('fonts/Everglow Script-webfont.ttf') format('truetype'),
+         url('fonts/Everglow Script-webfont.svg#everglowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'gotham_mediumregular';
+    src: url('fonts/ufonts.com_gotham-medium-webfont.eot');
+    src: url('fonts/ufonts.com_gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ufonts.com_gotham-medium-webfont.woff2') format('woff2'),
+         url('fonts/ufonts.com_gotham-medium-webfont.woff') format('woff'),
+         url('fonts/ufonts.com_gotham-medium-webfont.ttf') format('truetype'),
+         url('fonts/ufonts.com_gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*------------- What is Normal Anyway --------------*/
+
+body, select, input, textarea {
+  color: #000;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+section,
+footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #03f;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto !important;
+}
+pre {
+  white-space: pre-line;
+  }
+
+/* = Wordpress Code Base 
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/* = Navigation 
+-------------------------------------------------------------- */
+#main_nav .navbar {
+  margin-bottom: 0;
+  background-image: url(assets/img/mobile_nav_bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#main_nav .navbar-default .navbar-nav li a {
+  color: #fff;
+}
+#main_nav .navbar-default .navbar-nav .active a {
+  color: #777;
+}
+#menu-main {
+  background: #000;
+}
+@media screen and (min-width: 768px) {
+  #main_nav .navbar {
+    background-image: none;
+  }
+  #menu-main {
+    background: transparent;
+  }
+  #main_nav .navbar-default .navbar-nav li a {
+    color: #f11b6e;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 15px 8px;
+  }
+  #main_nav .navbar-default .navbar-nav .active a {
+    background: transparent;
+    color: #ff725f;
+  }
+  #header_nav .navbar-header img {
+    width: 200px;
+  }
+  #header_nav .navbar-header .navbar-brand {
+    padding: 10px 0 0 0;
+    margin-right: 22px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #header_nav .navbar-header img {
+    width: 200px;
+  }
+  #header_nav .navbar-header .navbar-brand {
+    padding: 10px 0 0 0;
+    margin-right: 72px;
+  }
+}
+/* = Front Page
+-------------------------------------------------------------- */
+
+#home_heading {
+  height: auto;
+  background-color: #F1F1F3;
+}
+.confidence,
+.ignited {
+  position: relative;
+}
+.confidence:before,
+.ignited:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  z-index: 2;
+  background-color: #ef1e7a;  
+  -webkit-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+}
+.ignited:before {
+  width: 100%;
+  z-index: 1;
+  background-color: #ff725f;
+  -webkit-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+.confidence h1,
+.ignited h1 {
+  color: #f2f2f2;
+  font-size: 50px;
+}
+.confidence h1 {
+  font-family: everglowregular;
+  font-size: 60px;
+}
+.ignited h1 {
+  font-family: gotham_mediumregular;
+  text-transform: uppercase;
+}
+.confidence .title,
+.ignited .title {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  z-index: 2;
+}
+.confidence .title {
+  top: 1px;
+}
+.ignited .title {
+  top: 1px;
+}
+#home_heading .image {
+  margin-top: 8%;
+}
+@media screen and (min-width: 667px) {
+  .confidence:before,
+  .ignited:before {
+    width: 75%;
+    left: 78px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .confidence:before, 
+  .ignited:before {
+    width: 68%;
+  }
+  #home_header_image .confidence h1 {
+    left: 1px;
+  }
+}
+/*.......... cta ..........*/
+
+#home_cta {
+  background-color: rgba(239,30,122,0.5);
+  color: #fff;
+  position: relative;
+  top: -166;
+  margin-bottom: -166px;
+}
+#home_cta .heading {
+  font-family: montserratbold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+#home_cta .subheading {
+  font-family: montserratregular;
+}
+@media screen and (min-width: 768px) {
+  #home_cta {
+    top: -84px;
+    margin-bottom: -84px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home_cta {
+    top: -155px;
+    margin-bottom: -155px;
+  }
+}
+/*.......... cta form ..........*/
+
+#home_cta .form {
+  font-family: montserratregular;
+}
+#home_cta input::-webkit-input-placeholder,
+#home_cta input::-moz-placeholder,
+#home_cta input:-moz-placeholder,
+#home_cta input:-ms-input-placeholder {
+  color: #01c6d7;
+}
+#home_cta input[type="submit"] {
+  width: 100%;
+  height: 7%;
+  margin-bottom: 10%;
+  background-color: #01c6d7;
+}
+.form input[placeholder],
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #01c6d7;
+}
+@media screen and (min-width: 768px) {
+  #home_cta .form {
+    margin-top: 34px;
+  }
+  #home_cta .ginput_container input, 
+  #home_cta .ginput_container select, 
+  #home_cta .ginput_container textarea{
+    width: 84%;
+    height: 45px;
+    float: left;
+  }
+  #home_cta ul {
+    max-width: 384px;
+  }
+  #home_cta li {
+    display: inline-block;
+  }
+  #home_cta input[type="submit"] {
+    width: 15%;
+    float: right;
+    position: relative;
+    top: -70px;
+    left: 6px;
+    height: 45px;
+    margin-bottom: 0;
+    border: none;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;  
+    font-size: 9px;
+    text-align: center;
+  }
+   #input_1_1 {
+    border-radius: 20px;
+   }
+   #input_1_2 {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home_cta .ginput_container input, 
+  #home_cta .ginput_container select, 
+  #home_cta .ginput_container textarea {
+    width: 100%;
+  }
+  #home_cta .gform_body {
+    margin-left: 78px;
+    position: relative;
+    top: 9px;
+  }
+  #home_cta input[type="submit"] {
+    top: -62px;
+  }
+}
+/*.......... featured links ..........*/
+
+#home_featuredLinks .background {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 350px;
+}
+#home_featuredLinks .link_box {
+  min-height: 294px;
+  position: relative;
+}
+#home_featuredlinks .link_box:before {
+  content: "";
+  background: rgba(1,198,215,0.5);
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 350px;
+}
+#home_featuredLinks .heading,
+#home_featuredLinks .subheading {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#home_featuredLinks .heading {
+  top: -195px;
+  margin-bottom: -134px;
+  font-family: montserratbold;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#home_featuredLinks .subheading {
+  top: -50px;
+  font-family: montserratregular;
+}
+#home_featuredLinks .t2:before {
+  background: rgba(239,30,122,0.5);
+}
+#home_featuredLinks .t3:before {
+  background: rgba(248,248,0,0.5);
+}
+#home_featuredLinks .t4:before {
+  background: rgba(255,114,95,0.5);
+}
+@media screen and (min-width: 768px) {
+  #home_featuredLinks .background {
+    min-height: 252px;
+    width: 375px;
+    float: left;
+    height: 84px;
+  }
+  #home_featuredLinks .link_box {
+    min-height: 252px;
+  }
+  #home_featuredlinks .link_box:before {
+    min-height: 252px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home_featuredLinks {
+    margin-top: 30px;
+  }
+  #home_featuredLinks .background {
+    width: 240px;
+    margin-left: 2px;
+  }
+  #home_featuredLinks .heading {
+    font-size: 19px;
+    top: -214px;
+    margin-bottom: -152px;
+    min-height: 80px;
+    width: 172px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*.......... recent posts / testimonials ..........*/
+
+#home_posts .title,
+#home_testimonials .title {
+  font-family: montserratregular;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  border-bottom: 1px solid;
+  margin-top: 10%; 
+  margin-bottom: 10%;
+  padding-bottom: 20px;
+}
+#home_posts .post {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 0 10px 0 10px;
+}
+#home_posts .meta,
+#home_testimonials .testimony_box {
+  min-height: 50px;
+  background-color: #f8f8f8;
+  padding: 5px;
+  text-align: center;
+  color: #493e49;
+}
+#home_testimonials .testimony_box {
+  background-color: transparent;
+}
+#home_posts .meta:hover {
+  background-color: #f11b6e;
+  color: #fff;
+}
+#home_posts .post_title,
+#home_testimonials .client {
+  font-family: montserratbold;
+}
+#home_posts .date_and_category,
+#home_testimonials .testimony {
+  font-family: montserratregular;
+}
+#home_posts .date_and_category {
+  color: #f86e5b;
+}
+#home_posts .flex-direction-nav,
+#home_testimonials .flex-direction-nav,
+#about_content .flex-direction-nav {
+  display: none;
+}
+#home_testimonials .testimony {
+  color: #ef1e7a;
+}
+@media screen and (min-width: 1024px) {
+  #home_posts .title, 
+  #home_testimonials .title {
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  #home_posts .title h2,
+  #home_testimonials .title h2 {
+    font-size: 16px;
+  }
+  #post_slider {
+    margin-bottom: 20px;
+  }
+}
+/* = Page Headers
+-------------------------------------------------------------- */
+
+#home_header_image.bg,
+#about_header_image.bg,
+#transformations_header_image.bg,
+#shop_header_image.bg,
+#fitness-program_header_image.bg,
+#coaching_header_image.bg {
+  background-size: cover;
+  height: 200px;
+  background-position: top;
+}
+#about_header.bg,
+#transformations_header.bg,
+#shop_header.bg,
+#fitness-program_header.bg,
+#coaching_header.bg,
+#blog_header.bg {
+  background-image: url(assets/img/page_color_bar.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 52px;
+}
+#about_header ul,
+#transformations_header ul,
+#shop_header ul,
+#fitness-program_header ul,
+#coaching_header ul,
+#blog_header ul {
+  padding-left: 0;
+} 
+#about_header ul li,
+#transformations_header ul li,
+#shop_header ul li,
+#fitness-program_header ul li,
+#coaching_header ul li,
+#blog_header ul li {
+  display: inline-block;
+}
+#about_header,
+#transformations_header,
+#shop_header,
+#fitness-program_header,
+#coaching_header,
+#blog_header {
+  font-family: montserratregular;
+}
+#about_header .heading,
+#transformations_header .heading,
+#shop_header .heading,
+#fitness-program_header .heading,
+#coaching_header .heading,
+#blog_header .heading  {
+  color: #fff;
+  font-size: 20px;
+  margin: 4% 0 0;
+}
+#about_header ul li.heading > span,
+#transformations_header ul li.heading > span,
+#shop_header ul li.heading > span,
+#fitness-program_header ul li.heading > span,
+#coaching_header ul li.heading > span,
+#blog_header ul li.heading > span  {
+  color: #777;
+  padding: 0 4px 0px 3px;
+}
+@media screen and (min-width: 768px) {
+  #home_header_image.bg {
+    -webkit-background-size: 123%;
+    background-size: 123%;
+    height: 285px;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #home_header_image.bg {
+    height: 419px;
+  }
+}
+/* = About
+-------------------------------------------------------------- */
+
+#about_content .media {
+  text-align: center;
+  margin: 15% 0 15%; 
+}
+#about_content .media iframe {
+  width: 100%;
+}
+#about_content .transform_gallery {
+  margin-top: 15%;
+}
+#about_content .transform_gallery .caption {
+  min-height: 50px;
+  background-color: #fb6148;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+#about_content .transform_gallery .image img {
+  height: 344px !important; 
+}
+#about_content .from_the_blog {
+  margin: 25px 0 25px;
+  font-family: open_sansregular;
+  color: #444444;
+}
+#about_content .from_the_blog .blog.post.title {
+  font-family: open_sansbold;
+  text-transform: uppercase;
+}
+#about_content .from_the_blog .blog.post.excerpt,
+#about_content .from_the_blog .blog.post.more_titles {
+  color: #777777;
+  font-size: 12px;
+}
+#about_content .from_the_blog .blog.post.excerpt {
+  margin-bottom: 10px;
+}
+#about_content .from_the_blog .blog.post.excerpt span {
+  font-family: open_sansbold;
+}
+#about_content .from_the_blog li {
+  list-style: none;
+  border-top: 1px solid #777777;
+  padding: 5px;
+}
+#about_content .from_the_blog li:last-child {
+  border-bottom: 1px solid #777777;
+}
+#about_content .from_the_blog li span {
+  padding-left: 5px;
+}
+@media screen and (min-width: 375px) {
+  #about_content .media iframe {
+    height: 33%;
+  }
+}
+@media screen and (min-width: 480px) {
+  #about_content .media iframe {
+    height: 88%;
+  }
+  #about_content .transform_gallery .image img {
+    height: 433px !important;
+  }
+  #about_content .transform_gallery ul li {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #about_content .media {
+    text-align: center;
+    margin: 8% 0 8%;
+  }
+  #about_content .transform_gallery {
+    margin-top: 8%;
+  }
+  #about_content .media iframe {
+    height: 40%;
+  }
+  #about_content .transform_gallery .image img {
+    height: 233px !important;
+  }
+  #about_content .transform_gallery ul li {
+    height: 285px;
+  }
+  #about_content .transform_gallery .gallery_box {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+/*.......... cta ..........*/
+
+#about_cta {
+  background-color: #ff0f71;
+  color: #fff;
+  position: relative;
+  top: 0;
+}
+#about_cta .heading {
+  font-family: montserratbold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+#about_cta .subheading {
+  font-family: montserratregular;
+}
+
+/*.......... cta form ..........*/
+
+#about_cta .form {
+  font-family: montserratregular;
+}
+#about_cta input::-webkit-input-placeholder,
+#about_cta input::-moz-placeholder,
+#about_cta input:-moz-placeholder,
+#about_cta input:-ms-input-placeholder {
+  color: #01c6d7;
+}
+#about_cta input[type="submit"] {
+  width: 100%;
+  height: 7%;
+  margin-bottom: 10%;
+  background-color: #01c6d7;
+}
+@media screen and (min-width: 768px) {
+  #about_cta li {
+    display: inline-block;
+  }
+  #about_cta input[type="submit"] {
+    width: 15%;
+    float: right;
+    position: relative;
+    top: -59px;
+    left: 37px;
+    height: 34px;
+    margin-bottom: -23px;
+    border: none;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 7px;
+    text-align: center;
+    padding: 0;
+  }
+  #about_cta .form {
+    margin-top: 17px;
+  }
+}
+
+/* = Transform
+-------------------------------------------------------------- */
+
+#transformations_content .gallery_box {
+  margin-top: 20px;
+  text-align: center;
+  font-family: open_sansregular;
+}
+#transformations_content .gallery_box img {
+  width: 100%;
+}
+#transformations_content .caption {
+  min-height: 70px;
+  background-color: #f8f8f8;
+  color: #493e49;
+  padding: 5px;
+}
+#transformations_content .cap {
+  color: #f86e5b;
+}
+@media screen and (min-width: 667px) {
+  #transformations_content .gallery_box {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #transformations_content .gallery_box {
+    min-height: 460px;
+  }
+  #transformations_content .gallery_box img {
+    height: 390px !important;
+  }
+}
+/* = Shop 
+-------------------------------------------------------------- */
+
+#shop_content .image {
+  max-width: 400px;
+}
+
+
+/* = Fitness Program 
+-------------------------------------------------------------- */
+.page_fitness-program,
+#fitness-program_content_1,
+#fitness-program_content_2,
+#fitness-program_social {
+  font-family: montserratregular;
+  text-align: center;
+}
+#fitness-program_content_1 {
+  background-color: #01c6d7;
+  color: #fff;
+  max-height: 487px;
+}
+#fitness-program_content_1 .heading {
+  font-size: 41px;
+  font-family: montserratbold;
+  margin: 30px 0 0px;
+}
+#fitness-program_content_1 .subheading {
+  font-size: 24px;
+}
+#fitness-program_content_1 .button {
+  text-align: center;
+  margin: 40px 0 40px;
+}
+#fitness-program_content_1 .button .btn.section_1 {
+  background: -webkit-linear-gradient(90deg, #f6f6f6 0%, #ffffff 100%);
+  background: -moz-linear-gradient(90deg, #f6f6f6 0%, #ffffff 100%);
+  background: -o-linear-gradient(90deg, #f6f6f6 0%, #ffffff 100%);
+  background: -ms-linear-gradient(90deg, #f6f6f6 0%, #ffffff 100%);
+  background: linear-gradient(0deg, #f6f6f6 0%, #ffffff 100%);
+  width: 194px;
+  height: 53px;
+  color: #ef1e7a;
+  text-transform: uppercase;
+  padding: 14px;
+  font-size: 18px;
+}
+#fitness-program_content_1 .button .btn.section_1 a {
+  color: #ef1e7a;
+}
+/*.......... section 2..........*/
+
+#fitness-program_content_2 .heading {
+  color: #ff725f;
+  font-size: 26px;
+}
+#fitness-program_content_2 .bullets {
+  color: #ef1e7a;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+#fitness-program_content_2 .promo.heading {
+  color: #fff;
+  font-size: 22px;
+  z-index: 2;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+#fitness-program_content_2 .promo.heading:before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 70px;
+  z-index: -1;
+  background-color: #01c6d7;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  left: 23px;
+  top: 105px;
+}
+#fitness-program_content_2 .promo {
+  color: #fe4892;
+}
+#fitness-program_content_2 .pHeading {
+  position: relative;
+  top: 14px;
+}
+@media screen and (min-width: 375px) {
+  #fitness-program_content_2 .promo.heading:before {
+    width: 333px;
+  }
+  #fitness-program_content_2 .promo.heading {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #fitness-program_content_2 .promo.heading:before {
+    width: 75%;
+    left: 80px;
+  }
+}
+@media screen and (min-width: 667px) {
+  #fitness-program_content_2 .image {
+    margin-top: 25px;
+  }
+}
+/*.......... testimonials ..........*/
+
+#fitness-program_testimonials {
+  background-color: #fe4892;
+}
+#fitness-program_testimonials .title {
+  color: #fff;
+}
+#fitness-program_testimonials .flexslider {
+  background-color: transparent;
+  border: none;
+}
+#fitness-program_testimonials .testimony_box {
+  padding: 0 15px 0 15px;
+}
+#fitness-program_testimonials .testimony p,
+#fitness-program_testimonials .client {
+  color: #fff;
+}
+#fitness-program_testimonials .flex-direction-nav {
+  display: none;
+}
+#fitness-program_testimonials .flex-control-paging li a {
+  border-radius: 0;
+  background-color: #fff;
+}
+#fitness-program_testimonials .flex-control-paging li a.flex-active {
+  background-color: rgba(255,255,255,0.5);
+}
+/*.......... section 3 ..........*/
+
+#fitness-program_content_3 .heading {
+  color: #fff;
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 52px;
+}
+#fitness-program_content_3 .heading:before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 70px;
+  z-index: -1;
+  background-color: #fe4892;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  left: 23px;
+  top: -16px;
+}
+#fitness-program_content_3 .button {
+  margin-bottom: 25px;
+}
+#fitness-program_content_3 .button .btn.section_3 {
+  background-color: #01c6d7;
+  width: 194px;
+  height: 53px;
+  color: #ef1e7a;
+  text-transform: uppercase;
+  padding: 14px;
+  font-size: 18px;
+}
+#fitness-program_content_3 .button .btn.section_3 a {
+  color: #fff;
+}
+#fitness-program_content_3 .content {
+  color: #fe4892;
+}
+@media screen and (min-width: 375px) {
+  #fitness-program_content_3 .heading:before {
+    width: 333px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #fitness-program_content_3 .heading:before {
+    width: 75%;
+    left: 78px;
+  }
+  #fitness-program_content_3 .heading {
+    margin-top: 39px;
+  }
+}
+/*.......... gallery ..........*/
+
+#fitness-program_gallery {
+  background-color: #f8f800;
+}
+#fitness-program_gallery .heading {
+  color: #fe4892;
+}
+#fitness-program_gallery .heading h2 {
+  text-align: center;
+}
+#fitness-program_gallery .gallery_box {
+}
+#fitness-program_gallery .flexslider {
+  background-color: transparent;
+  border: none;
+}
+#fitness-program_gallery .flex-direction-nav {
+  display: none;
+}
+
+@media screen and (min-width: 667px) {
+  #fit_transformation_gallery .image img {
+    height: 223px !important;
+  }
+}
+/*.......... section 4 ..........*/
+#fitness-program_content_4 {
+  background-color: #ff725f;
+}
+#fitness-program_content_4 .heading {
+  color: #fe4892;
+  margin-top: 25px;
+  margin-bottom: 52px;
+  position: relative;
+  z-index: 0;
+  font-size: 22px;
+}
+#fitness-program_content_4 .heading:before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 70px;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  left: 9px;
+  top: -16px;
+}
+#fitness-program_content_4 .button {
+  margin-bottom: 25px;
+}
+#fitness-program_content_4 .button .btn.section_4 {
+  background-color: #01c6d7;
+  width: 194px;
+  height: 53px;
+  color: #ef1e7a;
+  text-transform: uppercase;
+  padding: 14px;
+  font-size: 18px;
+}
+#fitness-program_content_4 .button .btn.section_4 a {
+  color: #fff;
+}
+@media screen and (min-width: 375px) {
+  #fitness-program_content_4 .heading:before {
+    width: 333px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #fitness-program_content_4 .heading:before {
+    width: 97%;
+  }
+}
+@media screen and (min-width: 667px) {
+  #fitness-program_content_4 .heading {
+    margin-top: 42px;
+  }
+  #fitness-program_content_4 .heading:before {
+    width: 75%;
+    left: 78px;
+  }
+}
+/*.......... social ..........*/
+
+#fitness-program_social .facebook .circle {
+  background: #fe4892;
+  border-radius: 35px;
+  width: 50px;
+  height: 50px;
+  padding: 11px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#fitness-program_social .facebook .circle a {
+  color: #fff;
+}
+#fitness-program_social .facebook .circle i {
+  font-size: 30px;
+}
+#fitness-program_social .visit,
+#fitness-program_social .support {
+  font-size: 30px;
+  margin-top: 28px;
+  margin-bottom: 52px;
+}
+#fitness-program_social .visit {
+  font-family: everglowregular;
+}
+#fitness-program_social .visit:before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 70px;
+  z-index: -1;
+  background-color: #fe4892;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  left: 24px;
+}
+#fitness-program_social .visit .copy {
+  position: relative;
+  top: 4px;
+  color: #fff;
+  font-size: 50px;
+}
+#fitness-program_social .support:before {
+  content: "";
+  position: absolute;
+  width: 297px;
+  height: 104px;
+  z-index: -1;
+  background-color: #01c6d7;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+  left: 9px;
+}
+#fitness-program_social .support .copy {
+  position: relative;
+  top: 14px;
+  color: #fff;
+}
+@media screen and (min-width: 375px) {
+  #fitness-program_social .support {
+    margin-top: -30px;
+    margin-bottom: 35px;
+  }
+  #fitness-program_social .visit:before {
+    width: 333px;
+  }
+  #fitness-program_social .support:before {
+    width: 355px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #fitness-program_social .support {
+    margin-top: -30px;
+    margin-bottom: 35px;
+  }
+  #fitness-program_social .visit:before {
+    width: 92%;
+  }
+  #fitness-program_social .support:before {
+    width: 96%;
+  }
+}
+@media screen and (min-width: 667px) {
+  #fitness-program_social .visit:before,
+  #fitness-program_social .support:before {
+    width: 75%;
+    left: 78px;
+  }
+  #fitness-program_social .support {
+    margin-bottom: 118px;
+  }
+  #fitness-program_social .support .copy {
+    top: 27px;
+  }
+}
+/* = Coach
+-------------------------------------------------------------- */
+
+#coaching_featured {
+  background-color: #ff725f;
+}
+#coaching_featured,
+#coaching_test,
+#coaching_cta,
+#coaching_prerequisites,
+#coaching_sign_up,
+#coaching_questions {
+  font-family: montserratregular;
+}
+#coaching_featured .media {
+  margin: 20px 0 20px;
+  text-align: center;
+}
+#coaching_featured .media iframe {
+    width: 98%;
+    height: 33%;
+  }
+#coaching_test,
+#coaching_test .test a {
+  color: #ef1e7a;
+  text-align: center;
+}
+#coaching_test .test {
+  margin-bottom: 40px;
+}
+#coaching_test .symbol {
+  margin-top: 20px;
+}
+#coaching_test i {
+  font-size: 38px;
+}
+#coaching_test .content {
+  color: #ff725f;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#coaching_cta .cta_box:before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 108px;
+  z-index: -1;
+  background-color: #fe4892;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  left: 12px;
+}
+#coaching_cta .cta {
+  color: #fff;
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 52px;
+  position: relative;
+  top: 7px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+#coaching_cta .cta a {
+  color: #fff;
+}
+@media screen and (min-width: 667px) {
+  #coaching_cta .cta_box:before {
+    width: 75%;
+    left: 78px;
+  }
+  #coaching_cta .cta {
+    margin-bottom: 118px;
+  }
+
+}
+
+#coaching_prerequisites {
+  background-color: #f8f800;
+  color: #fe4892;
+}
+#coaching_prerequisites .title_box:before {
+  content: "";
+  position: absolute;
+  width: 96%;
+  height: 46px;
+  z-index: 0;
+  background-color: #fff;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+  left: 9px;
+}
+#coaching_prerequisites .title {
+  position: relative;
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 52px;
+  position: relative;
+  top: 7px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+#coaching_prerequisites ul li {
+  list-style: none;
+}
+
+#coaching_sign_up {
+  text-align: center;
+}
+
+#coaching_sign_up .header {
+  color: #fe4892;
+  font-size: 22px;
+}
+#coaching_sign_up .content {
+  color: #ff725f;
+  text-align: center;
+}
+#coaching_sign_up .button {
+  margin-bottom: 40px;
+}
+#coaching_sign_up .btn.sign_up {
+  background-color: #01c6d7;
+  width: 194px;
+  height: 53px;
+  color: #ef1e7a;
+  text-transform: uppercase;
+  padding: 14px;
+  font-size: 18px;
+}
+#coaching_sign_up .btn a {
+  color: #fff;
+}
+
+#coaching_questions {
+  font-size: 20px;
+  background-color: #01c6d7;
+  height: 60px;
+}
+
+#coaching_questions .title_and_text {
+  margin-top: 18px;
+  text-align: center;
+}
+#coaching_questions ul {
+  padding-left: 0;
+}
+#coaching_questions ul li {
+  display: inline-block;
+  color: #ffffff;
+}
+#coaching_questions ul li a {
+  color: #fff;
+}
+@media screen and (min-width: 480px) {
+  #coaching_featured .media iframe {
+    width: 98%;
+    height: 80%;
+  }
+  #coaching_cta .cta {
+    top: 25px;
+  }
+}
+@media screen and (min-width: 667px) {
+  #coaching_prerequisites .title_box:before {
+    width: 75%;
+    left: 78px;
+  }
+  #coaching_questions {
+    margin-top: 37px;
+    height: 100px;
+  }
+}
+@media screen and (min-height: 768px) {
+  #coaching_featured .media iframe {
+    height: 38%;
+  }
+  #coaching_questions .title_and_text {
+    margin-top: 28px;
+    font-size: 30px;
+  }
+}
+/* = Blog
+-------------------------------------------------------------- */
+#blog_content {
+  font-family: montserratregular;
+}
+#blog_content .post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#blog_content .thumb {
+  background-size: cover;
+  height: 200px;
+  background-position: top;
+}
+#blog_content .title,
+#blog_content .dates, 
+#blog_content .meta,
+#blog_content .copy,
+#blog_content .readon {
+  text-align: center;
+}
+#blog_content .title {
+  font-size: 30px;
+  color: #454545;
+  margin: 10px 0 10px 0;
+}
+#blog_content .dates {
+  float: left;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+  padding: 8px;
+}
+#blog_content .date.day {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+#blog_content .date.month {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: -10px;
+  letter-spacing: -3px;
+}
+#blog_content .meta ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+#blog_content .meta ul li {
+  display: inline-block;
+  color: #888888;
+  font-size: 12px;
+  padding-right: 8px;
+  margin-bottom: 10px;
+}
+#blog_content .readon,
+#blog_content .readon a {
+  color: #fb6148;
+}
+#blog_content .line {
+  background-color: #aaaaaa;
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#blog_content .recent_post_heading,
+#blog_content .cat {
+  color: #444444;
+  text-transform: uppercase;
+}
+#blog_content .posts.recent {
+  margin-bottom: 20px;
+  height: 62px;
+  max-width: 285px;
+}
+#blog_content .posts.recent .rcnt_post_title {
+  font-family: arial;
+  font-size: 14px;
+  color: #656565;
+}
+#blog_contnet .posts.recent img {
+  height: 67px;
+  width: 67px;
+}
+#blog_content .posts.recent .date {
+  color: #aaaaaa;
+}
+#blog_content .categories ul li {
+  list-style: none;
+  color: #666666;
+}
+#blog_content .categories ul li a {
+  color: #666666;
+}
+#blog_content .categories ul li:before {
+  font-family: 'FontAwesome';
+  content: '\f054';
+  margin:0 5px 0 -15px;
+  color: #666666;
+}
+@media screen and (min-width: 1024px) {
+  #blog_content .recent_post_heading, 
+  #blog_content .cat {
+    margin-top: 20px;
+  }
+}
+#pagination {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ul.page-numbers {
+    list-style: none;
+    margin: 0;
+}
+.page-numbers:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ul.page-numbers li {
+    display: block;
+    float: left;
+    margin: 0 4px 4px 0;
+    text-align: center;
+}
+.page-numbers a,
+.page-numbers span {
+    line-height: 1.6em;
+    display: block;
+    padding: 0 6px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #888;
+}
+.page-numbers a span { padding: 0 }
+
+.page-numbers a:hover,
+.page-numbers.current,
+.page-numbers.current:hover {
+    color: #fff;
+    background: #fb6148;
+    text-decoration: none;
+}
+.page-numbers:hover { text-decoration: none }
+
+@media screen and (min-width: 667px) {
+  #blog_content .thumb {
+    height: 260px;
+  }
+}
+
+/* = Footer
+}
+
+-------------------------------------------------------------- */
+footer .top,
+footer .middle,
+footer .bottom,
+footer .bottom a,
+footer .bottom a:hover {
+  text-align: center;
+  font-family: montserratregular;
+  color: #fff;
+}
+footer .top,
+footer .middle {
+  background-color: #3e3e3e;
+}
+footer .bottom {
+  background-color: #2e2e2e;
+}
+footer .menu {
+  margin-top: 10%;
+}
+footer .top {
+  border-top: 6px solid #c5c5c5;
+}
+footer .top ul {
+  padding-left: 0;
+}
+footer .top ul li {
+  display: inline-block;
+  /*font-family: montserratregular;*/
+  /*color: #fff;*/
+  text-transform: uppercase;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+footer .top ul li a {
+  color: #fff;
+}
+footer .stay_connected {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ff725f;
+  border-top: 1px solid #ff725f;
+  width: 48%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-top: 7%;
+  padding: 5px 0 5px;
+}
+footer .top .social .circle {
+  background: #757575;
+  border-radius: 35px;
+  width: 39px;
+  height: 39px;
+  padding: 9px;
+}
+footer .top .social .circle i {
+  font-size: 20px;
+  color: #3e3e3e;
+}
+footer .middle .logo {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #ff725f;
+  border-top: 1px solid #ff725f;
+  padding: 9px 0 16px;
+}
+footer .middle .meta,
+footer .middle a,
+footer .middle a:hover {
+  color: #8e8e8e;
+}
+footer .middle .meta,
+footer .bottom {
+  font-size: 12px;
+}
+footer .middle .mobile,
+footer .middle .email {
+  margin-bottom: 5%;
+}
+footer .bottom {
+  font-size: 10px;
+}
+footer .bottom .lvlydb,
+footer .bottom .lvlydb a,
+footer .bottom .lvlydb a:hover  {
+  margin: 5% 0 5%;
+  color: #8e8e8e;
+}
+footer .bottom .copyright {
+  color: #ff725f;
+}
+@media screen and (min-width: 1024px) {
+  footer .menu {
+    margin-top: 6%;
+    text-align: left;
+  }
+  footer .stay_connected {
+    border-top: none;
+    text-align: left;
+    padding: 5px 0 20px;
+    width: 100%;
+    margin-top: 19%;
+  }
+  footer .top ul {
+    border-bottom: 1px solid #777777;
+    padding-bottom: 17px;
+  }
+  footer .stay_connected {
+    text-align: left;
+    margin-bottom: 6%;
+  }
+  footer .top .social .circle {
+    width: 34px;
+    height: 34px;
+  }
+  footer .top .social .circle i {
+    font-size: 16px;
+  }
+  footer .top .social ul {
+    padding-bottom: 7px;
+  }
+  footer .middle {
+    margin-bottom: -20px;
+  }
+  footer .logo_meta {
+    height: 50px;
+    width: 72%;
+    float: left;
+    position: relative;
+    top: -60px;
+    border-bottom: 1px solid #777777;
+    margin-left: 15px;
+  }
+  footer .middle .logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0px 0 17px;
+    border-top: none;
+    border-bottom: none;
+    width: 30%;
+    float: left;
+  }
+  footer .logo_meta .meta {
+    float: left;
+    text-align: left;
+    position: relative;
+    width: 70%;
+    padding-top: 7px;
+  }
+  footer .middle .logo a img {
+    width: 213px;
+  } 
+  footer .middle .meta ul li {
+    display: inline-block;
+    padding-right: 21px;
+  }
+  footer .bottom .lvlydb {
+    margin: 3% 0 3%;
+    text-align: left;
+  }
+}
+
+
+
+/*Test myCode*/
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
+
