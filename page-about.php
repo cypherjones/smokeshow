@@ -188,6 +188,11 @@
   <section id="<?php echo $page_slug ?>_cta">
     <div class="container">
       <div class="row">
+        <div class="never">
+          Never miss an <span>Update</span>
+        </div>
+      </div>
+      <div class="row">
         <div class="cta">
           <div class="col-xs-12 col-sm-5">
           <?php 

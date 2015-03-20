@@ -239,6 +239,15 @@ a img.aligncenter {
     margin-right: 72px;
   }
 }
+@media screen and (min-width: 1200px) {
+  #header_nav #menu-main {
+    float: right;
+  }
+  #main_nav .navbar-default .navbar-nav li a {
+    font-size: 13px;
+    padding: 15px 15px;
+  }
+}
 /* = Front Page
 -------------------------------------------------------------- */
 
@@ -318,6 +327,32 @@ a img.aligncenter {
     left: 1px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .confidence h1 {
+    font-size: 87px;
+  }
+  .confidence:before,
+  .ignited:before {
+    left: 169px;
+    width: 56%;
+    height: 101px;
+  }
+  .ignited:before {
+    left: 205px;
+    top: -8px;
+  }
+  .ignited h1 {
+    position: relative;
+    left: 50px;
+    font-size: 78px;
+  }
+  .confidence:before {
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+}
 /*.......... cta ..........*/
 
 #home_cta {
@@ -347,65 +382,86 @@ a img.aligncenter {
     margin-bottom: -155px;
   }
 }
+@media screen and (min-width: 1200px) {
+  #home_cta {
+    top: -115px;
+    margin-bottom: -113px;
+    height: 114px;
+  }
+}
 /*.......... cta form ..........*/
 
 #home_cta .form {
   font-family: montserratregular;
 }
-#home_cta input::-webkit-input-placeholder,
+/*#home_cta input::-webkit-input-placeholder,
 #home_cta input::-moz-placeholder,
 #home_cta input:-moz-placeholder,
 #home_cta input:-ms-input-placeholder {
   color: #01c6d7;
-}
-#home_cta input[type="submit"] {
+}*/
+#home_cta input[type="submit"],
+#about_cta input[type="submit"] {
   width: 100%;
   height: 7%;
   margin-bottom: 10%;
   background-color: #01c6d7;
 }
-.form input[placeholder],
-.form input::-webkit-input-placeholder,
-.form textarea::-webkit-input-placeholder {
+#home_cta .form input[placeholder],
+#home_cta .form input::-webkit-input-placeholder,
+#home_cta .form textarea::-webkit-input-placeholder,
+#about_cta .form input[placeholder],
+#about_cta .form input::-webkit-input-placeholder,
+#about_cta .form textarea::-webkit-input-placeholder {
   color: #01c6d7;
 }
 @media screen and (min-width: 768px) {
-  #home_cta .form {
+  #home_cta .form,
+  #about_cta .form {
     margin-top: 34px;
   }
   #home_cta .ginput_container input, 
   #home_cta .ginput_container select, 
-  #home_cta .ginput_container textarea{
+  #home_cta .ginput_container textarea,
+  #about_cta .ginput_container input, 
+  #about_cta .ginput_container select, 
+  #about_cta .ginput_container textarea
+   {
     width: 84%;
     height: 45px;
     float: left;
   }
-  #home_cta ul {
+  #home_cta ul,
+  #about_cta ul {
     max-width: 384px;
   }
-  #home_cta li {
+  #home_cta li,
+  #about_cta li {
     display: inline-block;
   }
-  #home_cta input[type="submit"] {
+  #home_cta input[type="submit"],
+  #about_cta input[type="submit"] {
     width: 15%;
     float: right;
     position: relative;
     top: -70px;
     left: 6px;
-    height: 45px;
+    height: 44.5px;
     margin-bottom: 0;
     border: none;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;  
     font-size: 9px;
     text-align: center;
   }
-   #input_1_1 {
+  #home_cta #input_1_1,
+  #about_cta #input_1_1 {
     border-radius: 20px;
    }
-   #input_1_2 {
+  #home_cta #input_1_2,
+  #about_cta #input_1_2 {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 0px;
@@ -415,18 +471,42 @@ a img.aligncenter {
 @media screen and (min-width: 1024px) {
   #home_cta .ginput_container input, 
   #home_cta .ginput_container select, 
-  #home_cta .ginput_container textarea {
+  #home_cta .ginput_container textarea,
+  #about_cta .ginput_container input, 
+  #about_cta .ginput_container select, 
+  #about_cta .ginput_container textarea  {
     width: 100%;
   }
-  #home_cta .gform_body {
+  #home_cta .gform_body,
+  #about_cta .gform_body {
     margin-left: 78px;
     position: relative;
     top: 9px;
   }
-  #home_cta input[type="submit"] {
+  #home_cta input[type="submit"],
+  #about_cta input[type="submit"]{
     top: -62px;
   }
 }
+@media screen and (min-width: 1200px) {
+  #home_cta .form,
+  #about_cta .form {
+    margin-top: 20px;
+  }
+  #home_cta li,
+  #about_cta li {
+    width: 50%;
+  }
+  #home_cta ul,
+  #about_cta ul {
+    max-width: 482px;
+  }
+  #home_cta input[type="submit"],
+  #about_cta input[type="submit"] {
+    top: -61px;
+  }
+}
+
 /*.......... featured links ..........*/
 
 #home_featuredLinks .background {
@@ -509,6 +589,11 @@ a img.aligncenter {
     width: 172px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #home_featuredLinks .background {
+    width: 290px;
   }
 }
 /*.......... recent posts / testimonials ..........*/
@@ -660,6 +745,20 @@ a img.aligncenter {
     height: 419px;
   }
 }
+@media screen and (min-width: 1200px) {
+  #about_header_image.bg {
+    height: 385px;  
+  }
+  #about_header .heading {
+    margin: 3% 0px 0;
+  }
+  #about_header.bg {
+    height: 95px;
+  }
+  #about_content .content {
+    margin-bottom: 40px;
+  }
+}
 /* = About
 -------------------------------------------------------------- */
 
@@ -669,6 +768,9 @@ a img.aligncenter {
 }
 #about_content .media iframe {
   width: 100%;
+}
+#about_content .content {
+  font-family: montserratregular;
 }
 #about_content .transform_gallery {
   margin-top: 15%;
@@ -752,6 +854,17 @@ a img.aligncenter {
     margin-left: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  #about_content .transform_gallery {
+    margin-top: 55px;
+  }
+  #about_content .transform_gallery ul li {
+    height: 350px;
+  }
+  #about_content .transform_gallery .image img {
+    height: 292px !important;
+  }
+}
 /*.......... cta ..........*/
 
 #about_cta {
@@ -760,55 +873,32 @@ a img.aligncenter {
   position: relative;
   top: 0;
 }
-#about_cta .heading {
+#about_cta .heading,
+#about_cta .never  {
   font-family: montserratbold;
   font-size: 20px;
   margin-top: 20px;
 }
 #about_cta .subheading {
   font-family: montserratregular;
+  text-transform: uppercase;
 }
-
-/*.......... cta form ..........*/
-
-#about_cta .form {
-  font-family: montserratregular;
+#about_cta .never {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
 }
-#about_cta input::-webkit-input-placeholder,
-#about_cta input::-moz-placeholder,
-#about_cta input:-moz-placeholder,
-#about_cta input:-ms-input-placeholder {
-  color: #01c6d7;
+#about_cta .never span {
+  font-family: everglowregular;
+  text-transform: none;
+  font-size: 55px;
 }
-#about_cta input[type="submit"] {
-  width: 100%;
-  height: 7%;
-  margin-bottom: 10%;
-  background-color: #01c6d7;
-}
-@media screen and (min-width: 768px) {
-  #about_cta li {
-    display: inline-block;
-  }
-  #about_cta input[type="submit"] {
-    width: 15%;
-    float: right;
-    position: relative;
-    top: -59px;
-    left: 37px;
-    height: 34px;
-    margin-bottom: -23px;
-    border: none;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 7px;
-    text-align: center;
-    padding: 0;
-  }
-  #about_cta .form {
-    margin-top: 17px;
+@media screen and (min-width: 1200px) {
+  #about_cta .subheading {
+    width: 61%;
+    font-size: 16px;
+    margin-bottom: 31px
   }
 }
 
@@ -1624,13 +1714,15 @@ footer .stay_connected {
   font-size: 14px;
   text-transform: uppercase;
   border-bottom: 1px solid #ff725f;
-  border-top: 1px solid #ff725f;
   width: 48%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
   margin-top: 7%;
   padding: 5px 0 5px;
+}
+footer .social {
+  border-bottom: 1px solid #777777;
 }
 footer .top .social .circle {
   background: #757575;
@@ -1683,13 +1775,15 @@ footer .bottom .copyright {
   footer .stay_connected {
     border-top: none;
     text-align: left;
-    padding: 5px 0 20px;
+    padding: 5px 0 13px;
     width: 100%;
     margin-top: 19%;
   }
-  footer .top ul {
+  /*footer .top ul {
+    padding-bottom: 7px;
+  }*/
+  body > footer > div.top > div > div > div.col-md-9 > div {
     border-bottom: 1px solid #777777;
-    padding-bottom: 17px;
   }
   footer .stay_connected {
     text-align: left;
@@ -1702,9 +1796,10 @@ footer .bottom .copyright {
   footer .top .social .circle i {
     font-size: 16px;
   }
-  footer .top .social ul {
+   .social ul {
     padding-bottom: 7px;
   }
+
   footer .middle {
     margin-bottom: -20px;
   }
